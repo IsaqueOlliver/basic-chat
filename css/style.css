@@ -11,6 +11,7 @@ body {
     flex-wrap: wrap;
     height: 640px;
     background-color: rgb(17, 21, 24);
+
 }
 
 .chat-box {
@@ -33,6 +34,7 @@ body {
     padding-top: 10px;
     margin-top: 0;
     margin-bottom: 0;
+    word-wrap: break-word;
 }
 
 .send-msg {
