@@ -4,20 +4,17 @@ function sendMessage() {
     let message = document.querySelector(".send-msg input");
     let msg = message.value;
     if(msg == "") return false;
-    let msgHistory = document.querySelector("div.history");
-    let newHistory = msgHistory.innerHTML;
-    newHistory += `<p>Anyone: ${msg}</p`;
-    msgHistory.innerHTML = newHistory;
+    let msgHistoric = document.querySelector("div.historic");
+    let newHistoric = msgHistoric.innerHTML;
+    newHistoric += `<p>Anyone: ${msg}</p`;
+    msgHistoric.innerHTML = newHistoric;
     message.value = "";
     message.focus();
 
-    var textArea = document.querySelector('div.history');
-    textArea.scrollTop = textArea.scrollHeight;
+    msgHistoric.scrollTop = msgHistoric.scrollHeight;
 }
 
 function verifyKey(e) {
-    if(!e) return false;
-
 	if(e.keyCode == 13) {
 		sendMessage();
 	}

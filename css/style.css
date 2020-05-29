@@ -22,14 +22,15 @@ body {
     border-radius: 5px;
 }
 
-.history {
+.historic {
     margin: 13px;
     height: 80%;
     background-color: rgb(33, 44, 51);
     overflow-y: auto;
+    border-radius: 5px;
 }
 
-.history p {
+.historic p {
     margin-left: 15px;
     margin-right: 15px;
     color: white;
@@ -44,6 +45,7 @@ body {
     margin-right: 15px;
     background-color: rgb(33, 44, 51);
     height: 34px;
+    border-radius: 5px;
 }
 
 .send-msg input {
