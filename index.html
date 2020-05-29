@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Basic Chat</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 <body>
     <div class="chat-box">
@@ -14,7 +15,7 @@
             <p>Anyone: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
         </div>
         <div class="send-msg">
-            <input type="text" placeholder="Type your message" maxlength="500" onkeydown="verifyKey(e)">
+            <input type="text" placeholder="Type your message" maxlength="500">
             <button onclick="sendMessage()">></button>
         </div>    
     </div>

@@ -10,9 +10,14 @@ function sendMessage() {
     msgHistory.innerHTML = newHistory;
     message.value = "";
     message.focus();
+
+    var textArea = document.querySelector('div.history');
+    textArea.scrollTop = textArea.scrollHeight;
 }
 
 function verifyKey(e) {
+    if(!e) return false;
+
 	if(e.keyCode == 13) {
 		sendMessage();
 	}
