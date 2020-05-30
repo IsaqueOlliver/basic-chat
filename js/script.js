@@ -1,4 +1,8 @@
-window.addEventListener("keydown", verifyKey)
+// 79
+
+let jump = 0;
+
+window.addEventListener("keypress", verifyKey)
 
 function sendMessage() {
     let message = document.querySelector(".send-msg input");
@@ -16,6 +20,6 @@ function sendMessage() {
 
 function verifyKey(e) {
 	if(e.keyCode == 13) {
-		sendMessage();
+        sendMessage();
 	}
 }
