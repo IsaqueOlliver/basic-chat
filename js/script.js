@@ -1,7 +1,3 @@
-// 79
-
-let jump = 0;
-
 window.addEventListener("keypress", verifyKey)
 
 function sendMessage() {
